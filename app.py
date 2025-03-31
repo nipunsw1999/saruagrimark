@@ -48,13 +48,15 @@ with st.sidebar:
     # st.subheader("Welcome to Saru Agrimart!")
     st.markdown('<div class="sidebar-title-below">සරු ඇග්රිමාර්ට් වෙත සාදරයෙන් පිළිගනිමු</div>', unsafe_allow_html=True)
 
-col1, col2 = st.columns([2,6])
-with col1:
-    image = Image.open("images/main/logo.jpg")
-    st.image(image, width=150)
-with col2:
-    st.markdown('<div class="title">Welcome to Saru Agrimart</div>', unsafe_allow_html=True)
-    
+# col1, col2 = st.columns([2,6])
+# with col1:
+#     image = Image.open("images/main/logo.jpg")
+#     st.image(image, width=150)
+# with col2:
+#     st.markdown('<div class="title">Welcome to Saru Agrimart</div>', unsafe_allow_html=True)
+
+st.markdown('<div class="title">Welcome to Saru Agrimart</div>', unsafe_allow_html=True)
+
 st.divider()
 
 # Read the video file as base64
