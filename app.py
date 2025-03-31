@@ -56,3 +56,20 @@ with col2:
     st.markdown('<div class="title">Welcome to Saru Agrimart</div>', unsafe_allow_html=True)
     
 st.divider()
+
+# Read the video file as base64
+import base64
+
+video_file = open("video/intro.mp4", "rb")
+video_bytes = video_file.read()
+encoded = base64.b64encode(video_bytes).decode()
+
+# Autoplay using HTML
+video_html = f"""
+    <video width="100%" autoplay muted loop>
+        <source src="data:video/mp4;base64,{encoded}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+"""
+
+st.markdown(video_html, unsafe_allow_html=True)
