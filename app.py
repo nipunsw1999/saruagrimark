@@ -44,7 +44,7 @@ st.markdown(
 # Sidebar content
 with st.sidebar:
     st.markdown('<div class="sidebar-title">Saru Agrimart</div>', unsafe_allow_html=True)
-    st.image('images/main/logo.jpg')
+    st.image('images/main/back.jpg')
     # st.subheader("Welcome to Saru Agrimart!")
     st.markdown('<div class="sidebar-title-below">සරු ඇග්රිමාර්ට් වෙත සාදරයෙන් පිළිගනිමු</div>', unsafe_allow_html=True)
 
@@ -54,3 +54,5 @@ with col1:
     st.image(image, width=150)
 with col2:
     st.markdown('<div class="title">Welcome to Saru Agrimart</div>', unsafe_allow_html=True)
+    
+st.divider()
